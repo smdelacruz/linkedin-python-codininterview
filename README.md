@@ -36,4 +36,29 @@ for i in range(len(a)): #2 rows
     for j in range(len(a[i])):
         print(a[i][j])  #24149254 (printed vertically)
 ```
+
+Time Complexity
+good way to get rough idea of efficiency
+--how much time does this function take ? 
+- Linear time complexity - for loop increment base on total # of input
+```
+t = an + b = O(n)
+```
+- Constant time complexity - the same output regardless of input
+```
+t = O(1)
+```
+- Quadratic time complexity - 2d array example
+```
+t = an^2 + c = O(n^2)
+
+ie
+array_2d = [[1,2], [3,4]]
+def total(array_2d):
+x = 0 ------------------------------------> O(i)
+for row in array_2d: ---------------------> O(n)--- O(n^2)
+    for item in row:----------------------> O(n)---^
+        x+= item--------------------------> O(1)---^
+return x ---------------------------------> o(i)
+```
    
